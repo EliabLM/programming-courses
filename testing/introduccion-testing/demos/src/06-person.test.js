@@ -1,5 +1,10 @@
 const Person = require("./06-person");
 
+// AAA
+// Arrange | Given
+// Act     | When
+// Assert  | Then
+
 describe("Test for Person", () => {
   let person;
 
@@ -8,9 +13,13 @@ describe("Test for Person", () => {
   });
 
   test("Should return down", () => {
+    // Arrange | Given
     person.weight = 45;
+
+    // Act     | When
     const imc = person.calcIMC();
 
+    // Assert  | Then
     expect(imc).toBe("down");
   });
 
