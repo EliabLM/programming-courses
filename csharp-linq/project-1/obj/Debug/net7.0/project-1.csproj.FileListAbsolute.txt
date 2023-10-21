@@ -1,0 +1,14 @@
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\bin\Debug\net7.0\project-1.exe
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\bin\Debug\net7.0\project-1.deps.json
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\bin\Debug\net7.0\project-1.runtimeconfig.json
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\bin\Debug\net7.0\project-1.dll
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\bin\Debug\net7.0\project-1.pdb
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\obj\Debug\net7.0\project-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\obj\Debug\net7.0\project-1.AssemblyInfoInputs.cache
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\obj\Debug\net7.0\project-1.AssemblyInfo.cs
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\obj\Debug\net7.0\project-1.csproj.CoreCompileInputs.cache
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\obj\Debug\net7.0\project-1.dll
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\obj\Debug\net7.0\refint\project-1.dll
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\obj\Debug\net7.0\project-1.pdb
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\obj\Debug\net7.0\project-1.genruntimeconfig.cache
+C:\Users\elopez\workspace\programming-courses\csharp-linq\project-1\obj\Debug\net7.0\ref\project-1.dll

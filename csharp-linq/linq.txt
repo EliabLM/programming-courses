@@ -1,0 +1,13 @@
+Características de LINQ
+
+- 2007
+- Language-Integrated Query (LINQ)
+- Query Expression
+- Métodos de extensión
+- System.Linq
+
+¿Qué no es LINQ?
+- No es un lenguaje de programación.
+- No es un componente de SQL.
+- No es un componente de base de datos.
+- No es una librería de terceros.
