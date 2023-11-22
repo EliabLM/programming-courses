@@ -1,6 +1,16 @@
 ﻿LinqQueries queries = new LinqQueries();
 
-ImprimirValores(queries.TodaLaColeccion());
+// Toda la colección
+// ImprimirValores(queries.TodaLaColeccion());
+
+// Libros despues del 2000
+// ImprimirValores(queries.LibrosDespuesDel2000());
+
+// Libros con más de 250 páginas y tienen en el titulo la palabra in Action
+// ImprimirValores(queries.LibrosConMasDe250PagConPalabrasInAction());
+
+// Todos los libros tienen Status
+Console.WriteLine(queries.TodosLosLibrosTienenStatus());
 
 void ImprimirValores(IEnumerable<Book> listadelibros)
 {
