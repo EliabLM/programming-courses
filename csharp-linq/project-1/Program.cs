@@ -10,7 +10,28 @@
 // ImprimirValores(queries.LibrosConMasDe250PagConPalabrasInAction());
 
 // Todos los libros tienen Status
-Console.WriteLine(queries.TodosLosLibrosTienenStatus());
+// Console.WriteLine(queries.TodosLosLibrosTienenStatus());
+
+// Algún libro fue publicado en 2005
+// Console.WriteLine(queries.SiAlgunLibroFuePublicado2005());
+
+// Libros de Python
+// ImprimirValores(queries.LibrosDePython());
+
+// Libros de Java ordenados por nombre ascendente
+// ImprimirValores(queries.LibrosDeJavaPorNombreAscendente());
+
+// Libros de mas de 450 páginas ordenados descendente
+// ImprimirValores(queries.LibrosMasDe450PaginasDescendente());
+
+// 3 primeros libros de Java mas recientes
+// ImprimirValores(queries.TresLibrosDeJavaMasRecientes());
+
+// Tercer y cuarto libros con más de 400 páginas
+// ImprimirValores(queries.TercerYCuartoLibroDeMas400Pag());
+
+// Tres primeros libros filtrados con Select
+ImprimirValores(queries.TresPrimerosLibros());
 
 void ImprimirValores(IEnumerable<Book> listadelibros)
 {
