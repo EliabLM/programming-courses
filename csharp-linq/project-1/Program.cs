@@ -31,7 +31,43 @@
 // ImprimirValores(queries.TercerYCuartoLibroDeMas400Pag());
 
 // Tres primeros libros filtrados con Select
-ImprimirValores(queries.TresPrimerosLibros());
+// ImprimirValores(queries.TresPrimerosLibros());
+
+// Cantidad de libros que tienen entre 200 y 500 páginas
+// Console.WriteLine($"Cantidad de libros que tienen entre 200 y 500 pag. {queries.CantidadDeLibrosEntre200Y500Pag()}");
+
+// Fecha de publicación menor
+// Console.WriteLine($"Fecha de publicación menor: {queries.FechaDePublicacionMenor()}");
+
+// Número de páginas del libro con mayor número de páginas
+// Console.WriteLine($"El libro con mayor número de páginas tiene: {queries.NumeroDePagLibroMayor()}");
+
+// Libro con menor número de páginas
+// var libroMenorPag = queries.LibroConMenorNumeroDePag();
+// Console.WriteLine($"{libroMenorPag.Title} - {libroMenorPag.PageCount}");
+
+// Libro con fecha de publicación más reciente
+// var libroFechaPubReciente = queries.LibroConMenorNumeroDePag();
+// Console.WriteLine($"{libroFechaPubReciente.Title} - {libroFechaPubReciente.PublishedDate.ToShortDateString()}");
+
+// Suma de páginas de libros entre 0 y 500 páginas
+// Console.WriteLine($"Suma total de páginas: {queries.SumaDeTodasLasPaginasLibrosEntre0y500()}");
+
+// Libros publicados después de 2015
+// Console.WriteLine(queries.TitulosDeLibrosDespuesDel2015Concatenados());
+
+// Promedio de caracteres del titulo de los libros
+// Console.WriteLine($"Promedio caracteres de los titulos: {queries.PromedioCaracteresTitulo()}");
+
+// Libros publicados a partir del 2000 agrupados por año
+// ImprimirGrupo(queries.LibrosDespuesDel2000AgrupadosPorAno());
+
+// Diccionario de libros agrupados por primera letra del título
+// ImprimirDiccionario(queries.DiccionarioDeLibrosPorLetra(), 'P');
+
+// Libros filtrados con la clausula join
+ImprimirValores(queries.LibrosDespuesDel2005ConMasDe500Pags());
+
 
 void ImprimirValores(IEnumerable<Book> listadelibros)
 {
@@ -39,5 +75,28 @@ void ImprimirValores(IEnumerable<Book> listadelibros)
     foreach (var item in listadelibros)
     {
         Console.WriteLine("{0,-60} {1, 15} {2, 15}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
+    }
+}
+
+void ImprimirGrupo(IEnumerable<IGrouping<int, Book>> ListaDeLibros)
+{
+    foreach (var grupo in ListaDeLibros)
+    {
+        Console.WriteLine("");
+        Console.WriteLine($"Grupo: {grupo.Key}");
+        Console.WriteLine("{0, -60} {1, 15} {2, 15}\n", "Titulo", "N. Páginas", "Fecha publicación");
+        foreach (var item in grupo)
+        {
+            Console.WriteLine("{0, -60} {1, 15} {2,15}", item.Title, item.PageCount, item.PublishedDate.Date);
+        }
+    }
+}
+
+void ImprimirDiccionario(ILookup<char, Book> ListaDeLibros, char letra)
+{
+    Console.WriteLine("{0, -60} {1, 15} {2, 15}\n", "Titulo", "N. Páginas", "Fecha publicación");
+    foreach (var item in ListaDeLibros[letra])
+    {
+        Console.WriteLine("{0, -60} {1, 15} {2,15}", item.Title, item.PageCount, item.PublishedDate.ToShortDateString());
     }
 }
